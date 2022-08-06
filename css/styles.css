@@ -287,12 +287,8 @@ h3 {
 
 .cowokers-items {
     width: 270px;
-    height: 428px;
     background-color: var(--primary-white-color);
-
-    border: 1px solid #EEEEEE;
     border-radius: 0px 0px 4px 4px;
-
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -322,9 +318,9 @@ h3 {
 .social {
     display: flex;
     width: 206px;
-    height: 44px;
     margin-right: auto;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .social-links {
@@ -333,7 +329,6 @@ h3 {
     justify-content: center;
     width: 44px;
     height: 44px;
-    margin-bottom: 30px;
 
     fill: var(--social-color); 
 }
@@ -356,6 +351,7 @@ h3 {
 }
 
 .client-item {
+    display: flex;
     width: 170px;
     height: 92px;
     align-items: center;
@@ -374,6 +370,11 @@ h3 {
 
 .clients-list:not(:first-child) {
     margin-left: 30px;
+}
+
+.client-icon {
+    width: 106px;
+    height: 60px;
 }
 
 /* Футер */
@@ -412,18 +413,20 @@ footer {
 }
 
 .social-section-name {
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
     color: var(--primary-white-color);
 }
 
 .footer {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-social {
     width: 206px;
-    height: 80px;
     margin-left: 70px;
-    margin-top: 12px
    
 }
 
@@ -433,10 +436,20 @@ footer {
     justify-content: space-between;
 }
 
-.social-links {
+.footer-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     fill: var(--primary-white-color);
+}
+
+.footer-social-links:hover,
+.footer-social-links:focus {
+    background-color: var(--accent-color);
 }
 
 /* Портфолио */
@@ -500,6 +513,7 @@ footer {
 }
 
 .our-projects-item {
+    display: block;
     margin-right: 30px;
     margin-bottom: 30px;
     
@@ -513,8 +527,12 @@ footer {
     margin-bottom: 0;
 }
 
-.our-projects-item:hover,
-.our-projects-item:focus {
+.our-projects-link {
+    display: block;
+}
+
+.our-projects-link:hover,
+.our-projects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
